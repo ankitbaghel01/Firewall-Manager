@@ -1,0 +1,12 @@
+
+
+
+
+@media (max-width: 516px) {
+    .header {
+      font-size: 16px;
+    }
+    .input, .select {
+      font-size: 12px;
+    }
+  }
