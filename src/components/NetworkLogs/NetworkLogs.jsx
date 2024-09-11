@@ -11,7 +11,7 @@ const NetworkLogs = () => {
     // Fetch data from the API
     const fetchLogs = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/logs');
+        const response = await fetch('http://20.51.249.42/api/logs');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

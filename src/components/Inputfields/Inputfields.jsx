@@ -26,7 +26,7 @@ const Inputfields = () => {
   useEffect(() => {
     const fetchEndpoints = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/agents');
+        const response = await fetch('http://20.51.249.42/api/agents');
         const data = await response.json();
         setEndpoints(data);
       } catch (error) {
@@ -57,7 +57,7 @@ const Inputfields = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:8080/api/rules', ruleData);
+      const response = await axios.post('http://20.51.249.42/api/rules', ruleData);
       if (response.status === 201) {
        
         toast.success('Rule Add Successful!');

@@ -9,7 +9,7 @@ const AlertTable = () => {
     // Fetch alerts from the API
     const fetchAlerts = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/alerts');
+        const response = await fetch('http://20.51.249.42/api/alerts');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -23,7 +23,7 @@ const AlertTable = () => {
     // Fetch agents from the API
     const fetchAgents = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/agents');
+        const response = await fetch('http://20.51.249.42/api/agents');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

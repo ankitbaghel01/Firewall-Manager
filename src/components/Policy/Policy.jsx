@@ -21,7 +21,7 @@ const Policy = () => {
     // Fetch rules from the API
     const fetchRules = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/rules');
+        const response = await fetch('http://20.51.249.42/api/rules');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -64,7 +64,7 @@ const Policy = () => {
     };
 
     try {
-      const response = await fetch(`http://localhost:8080/api/rules/${editingRule.id}`, {
+      const response = await fetch(`http://20.51.249.42/api/rules/${editingRule.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ const Policy = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/rules/${id}`, {
+      const response = await fetch(`http://20.51.249.42/api/rules/${id}`, {
         method: 'DELETE',
       });
 

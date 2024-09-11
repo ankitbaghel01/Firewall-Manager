@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import { Camera, Calendar, MessageCircle,MessagesSquare, Bell,EthernetPort, Users,Network,Paperclip, Smile, AtSign, Hash, Home, Search, Star, Plus, ChevronDown } from 'lucide-react';
+import { Camera, Calendar, MessageCircle,MessagesSquare, Bell,EthernetPort, Users,Network,Paperclip, Smile, AtSign,LogOut, Hash, Home, Search, Star, Plus, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 
@@ -68,6 +68,17 @@ const SideIcons = () => {
  Alert
   </div>
 </div>
+{/* <div className="relative inline-block group flex items-center">
+  <Link
+    to="/logout" // Replace '/target-page' with the path you want to navigate to
+    className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-blue-500 cursor-pointer"
+  >
+    <LogOut size={24} className="text-white hover:text-gray-300" />
+  </Link>
+  <div className="absolute hidden group-hover:block bg-white text-black text-xs rounded shadow p-2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out left-full top-1/2 transform -translate-x-2 -translate-y-1/2">
+  sign out
+  </div>
+</div> */}
 
 
 

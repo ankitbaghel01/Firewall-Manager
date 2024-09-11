@@ -7,7 +7,7 @@ const PortTable = () => {
     // Fetch data from the API
     const fetchPorts = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/open_ports');
+        const response = await fetch('http://20.51.249.42/api/open_ports');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
