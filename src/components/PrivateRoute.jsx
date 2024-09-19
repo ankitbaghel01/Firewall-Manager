@@ -1,30 +1,30 @@
 
-// import React, { useEffect } from 'react';
-// import { Navigate, Outlet } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Navigate, Outlet } from 'react-router-dom';
 
-// const PrivateRoute = () => {
-//   const token = localStorage.getItem('token');
+const PrivateRoute = () => {
+  const token = localStorage.getItem('token');
 
-//   useEffect(() => {
-//     const handleStorageChange = () => {
-//       const token = localStorage.getItem('token');
-//       if (!token) {
-//         window.location.reload();
-//       }
-//     };
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        window.location.reload();
+      }
+    };
 
-//     window.addEventListener('storage', handleStorageChange);
+    window.addEventListener('storage', handleStorageChange);
 
-//     return () => {
-//       window.removeEventListener('storage', handleStorageChange);
-//     };
-//   }, []);
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
 
-//   if (!token) {
-//     return <Navigate to="/login" />;
-//   }
+  if (!token) {
+    return <Navigate to="/login" />;
+  }
 
-//   return <Outlet />;
-// };
+  return <Outlet />;
+};
 
-// export default PrivateRoute;
+export default PrivateRoute;

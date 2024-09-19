@@ -11,11 +11,6 @@ const SideIcons = () => {
     <div>
         <div className="w-full  overscroll-x-none md:w-16 md:h-screen bg-gray-900 p-2 flex md:flex-col items-center justify-between md:justify-start md:space-y-4 fixed bottom-0 md:relative md:bottom-auto">
 
-
-
-
-
-
 <div className="relative inline-block group flex items-center">
   <Link
     to="/" // Replace '/target-page' with the path you want to navigate to

@@ -61,10 +61,22 @@ const Inputfields = () => {
       if (response.status === 201) {
        
         toast.success('Rule Add Successful!');
+        setIpAddress('');
+        setAppName('');
+        setDomain('');
+        setAction('Block');
+        setEndpoint('');
+        setError('');
       }
     } catch (error) {
       console.error('There was an error adding the rule:', error);
       toast.error('Failed to update rule');
+      setIpAddress('');
+      setAppName('');
+      setDomain('');
+      setAction('Block');
+      setEndpoint('');
+      setError('');
     }
   };
 
@@ -169,4 +181,3 @@ const Inputfields = () => {
 };
 
 export default Inputfields;
-

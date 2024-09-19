@@ -8,10 +8,10 @@ import NetworkLogs from './components/NetworkLogs/NetworkLogs.jsx';
 import Profile from './components/Profile/Profile.jsx';
 import Ports from './components/Ports/Ports.jsx';
 import Alert from './components/Alert/Alert.jsx';
-// import Login from './components/Login/Login.jsx';
-// import Registration from './components/Register/Register.jsx';
-// import PrivateRoute from './components/PrivateRoute.jsx';
-// import Logout from './components/Logout/Logout.jsx';
+import Login from './components/Login/Login.jsx';
+import Registration from './components/Register/Register.jsx';
+import PrivateRoute from './components/PrivateRoute.jsx';
+import Logout from './components/Logout/Logout.jsx';
 
 const App = () => {
     return (
@@ -20,9 +20,9 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 {/* <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Registration />} /> */}
+                <Route path="/register" element={<Registration />} />
 
-              {/* <Route element={<PrivateRoute />}> */}
+              <Route element={<PrivateRoute />}> */}
           <Route path="/home" element={<Home />} />
               <Route path='/activity' element={<Activity/>}/>
               <Route path='/networklogs' element={<NetworkLogs/>}/>
